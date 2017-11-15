@@ -17,8 +17,8 @@ class Question {
     })
   }
 
-  static async PrintAll(){
-    const allQuestions = await Question.All()
+  static PrintAll(){
+    const allQuestions = Question.All()
     console.log("\n")
     allQuestions.forEach(function(question){
       console.log(question.content)
@@ -27,7 +27,7 @@ class Question {
   }
 
   // FIXME: Implement Promise
-  static Find(id){
+  static async Find(id){
     console.log(`Waiting for Question ${id} to load...`)
 
       setTimeout(function(){
