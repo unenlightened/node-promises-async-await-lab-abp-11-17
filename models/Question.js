@@ -30,8 +30,8 @@ class Question {
   static async Find(id){
     console.log(`Waiting for Question ${id} to load...`)
 
-        setTimeout(function(){
-        const question = await Question._All[id-1] // Do Not Edit
+        await setTimeout(function(){
+        const question = Question._All[id-1] // Do Not Edit
         console.log(`...Question ${id} Loaded`) // Do Not Edit
 
         return question
