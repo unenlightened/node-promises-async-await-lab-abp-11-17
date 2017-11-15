@@ -27,7 +27,7 @@ class Question {
   }
 
   // FIXME: Implement Promise
-  static async Find(id){
+  static Find(id){
     console.log(`Waiting for Question ${id} to load...`)
        return new Promise(function(resolve){
           setTimeout(function(){
