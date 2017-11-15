@@ -17,8 +17,8 @@ class Question {
     })
   }
 
-  static PrintAll(){
-    const allQuestions = Question.All()
+  static async PrintAll(){
+    const allQuestions = await Question.All()
     console.log("\n")
     allQuestions.forEach(function(question){
       console.log(question.content)
